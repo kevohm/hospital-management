@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="account.css">
+    <title>Account</title>
+</head>
+
+<body>
+    <main>
+        <section class="main-sidebar" id="mainSidebar">
+            <div class="sidebar-content">
+                <div class="content-image">
+                    <div class="image-holder">
+                        <img src="../assets/8504f1563b9fdbe37b137b2c0ecce8b5.jpg">
+                        <label>
+                            <img src="../assets/svg/camera-solid.svg">
+                            <input type="file" accept="image/*">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-options">
+                <div class="options-display">
+                    <a class="nav-link" href="../stats/stats.html">
+                        <div>Stats</div>
+                    </a>
+                    <a class="nav-link" href="../schedule/schedule.html">
+                        <div>Schedule</div>
+                    </a>
+                    <a class="nav-link nav-link-active" href="../account/account.html" autofocus>
+                        <div>Details</div>
+                    </a>
+                    <a class="nav-link" href="../add/add.html">
+                        <div>Add schedule</div>
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-logout">
+                <div class="logout-btn">
+                    <a href="../index/index.html">logout</a>
+                </div>
+            </div>
+        </section>
+        <section class="main-body" id="mainBody">
+            <nav class="body-nav">
+                <div class="body-nav-menu" id="bodyNavMenu">
+                    <img src="../assets/svg/account-menu.svg"> 
+                </div>
+                <ul>
+                    <a href="../index/index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="#" id="change-link">
+                        <li>Details</li>
+                    </a>
+                </ul>
+            </nav>
+            <main class="body-main">
+                <!--details update-->
+                <section class="select-body main-details main-active-section">
+                    <div class="details-body">
+                        <div class="details-body-header">
+                            <h2>Details</h2>
+                        </div>
+                        <div class="details-body-info">
+                            <form>
+                                <div>
+                                    <label>Name: </label>
+                                    <input type="text" value="kevin">
+                                </div>
+                                <div>
+                                    <label> Email: </label>
+                                    <input type="text" value="kevin@gmail.com">
+                                </div>
+                                <div>
+                                    <label> Phone: </label>
+                                    <input type="text" value="0745362783">
+                                </div>
+                                <div>
+                                    <label>password: </label>
+                                    <input type="text" value="*******">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="details-body-update">
+                            <button>
+                                
+                                    update
+                                
+                                </button>
+                        </div>
+                    </div>
+                </section>
+                
+            </main>
+        </section>
+    </main>
+    <script src="account.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+* {
+  --main-background: #9dd1f1;
+  --main-color: #031927;
+  --temp-color: #db5528;
+  --sec-color: #508aa8;
+  --tertiary-color: #c8e0f4;
+  --white-wash: #fff;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@font-face {
+  font-family: footlight;
+  src: url("../assets/font/footlight-mt-light.ttf");
+  font-family: AbrilFatface;
+  src: url("../assets/font/AbrilFatface-Regular.ttf");
+  font-family: astra;
+  src: url("../assets/font/astra.woff");
+}
+body {
+  margin: 0;
+  background: var(--sec-color);
+  height: 100vh;
+  background-blend-mode: luminosity;
+  color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: astra;
+}
+
+.body-active {
+  background: var(--temp-color);
+}
+
+.main-body {
+  width: 500px;
+  height: 90%;
+  background: rgba(255, 255, 255, 0.041);
+  transition: all 0.6s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  font-family: astra;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.main-body-div {
+  width: 500px;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+  position: relative;
+}
+
+.main-div-signup > div {
+  width: 100%;
+}
+.main-div-signup .login-div-btn {
+  height: 20%;
+}
+.main-div-signup .login-div-btn > div {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-div-signup .login-div-btn > div > a {
+  padding: 0.2em;
+  background: var(--main-color);
+  color: var(--tertiary-color);
+  border: 1px solid transparent;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  font-family: astra;
+  width: 180px;
+}
+.main-div-signup .login-div-btn > div > a:hover {
+  border: 1px solid #fff;
+}
+.main-div-signup .login-div-btn > div > p {
+  font-size: 1.1em;
+}
+.main-div-signup .login-div-btn .less-height {
+  height: 20%;
+}
+.main-div-signup .login-form-div {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-div-signup .login-form-div > form {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-div-signup .login-form-div > form > div {
+  width: calc(100% - 130px);
+  padding-left: 130px;
+  height: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-div-signup .login-form-div > form > div h2 {
+  font-size: 2rem;
+}
+.main-div-signup .login-form-div > form > div input {
+  width: calc(250px - 0.6em);
+  padding: 0.4em;
+  border: 1px solid transparent;
+}
+.main-div-signup .login-form-div > form > div input:focus {
+  border: 1px solid var(--main-color);
+}
+.main-div-signup .login-form-div > form > div label {
+  display: block;
+}
+.main-div-signup .login-form-div > form > div input[type=submit] {
+  width: 254px;
+  margin-top: 1em;
+  padding: 0.2em;
+  font-family: astra;
+  font-size: 1.3rem;
+  font-weight: 520;
+}
+.main-div-signup .login-form-div > form > div input[type=submit]:hover {
+  background: #9baebd;
+  box-shadow: 0px 0px 0px 1px var(--main-color);
+}
+.main-div-signup .login-form-div > form > div .login-div-load {
+  position: relative;
+}
+.main-div-signup .login-form-div > form > div .login-load {
+  width: 254px;
+  padding: 0.3em;
+  text-align: center;
+  font-size: 1.2rem;
+  z-index: 2;
+  position: absolute;
+  display: none;
+}
+.main-div-signup .login-form-div > form > div .login-load-active {
+  display: inline;
+}
+.main-div-signup .login-form-div > form > div .submit {
+  display: none;
+}
+
+@media (max-width: 710px) {
+  .main-body {
+    width: 300px;
+    height: 90%;
+  }
+  .main-body .main-body-div {
+    width: 300px;
+    height: 100%;
+  }
+  .main-div-signup .login-form-div {
+    height: 80%;
+  }
+  .main-div-signup .login-form-div > form > div {
+    width: calc(100% - 30px);
+    padding-left: 30px;
+    height: 50px;
+  }
+  .main-div-signup .login-form-div > form > div h2 {
+    font-size: 2rem;
+  }
+  .main-div-signup .login-form-div > form > div input {
+    width: calc(245px - 0.6em);
+  }
+  .main-div-signup .login-form-div > form > div input[type=submit] {
+    width: 250px;
+  }
+  .main-div-login .signup-form-div > form > div {
+    width: calc(100% - 40px);
+    padding-left: 40px;
+  }
+  .main-div-login .signup-form-div > form > div > input {
+    width: 200px;
+  }
+}/*# sourceMappingURL=login.css.map */
